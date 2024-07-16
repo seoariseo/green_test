@@ -1,0 +1,286 @@
+@charset "UTF-8";
+
+#wrap{
+    width: 1200px;
+    margin: 0 auto;
+    position: relative;
+}
+
+
+#header{
+    width: 100%;
+    height: 100px;
+    /* background-color: aliceblue; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo{}
+
+.nav{
+    align-self: self-end;
+}
+
+.main{
+    /* margin-right: 10px; */
+    
+}
+
+.main > li{
+    display: inline-block;
+    position: relative;
+    width: 150px;
+    height: 50px;
+    color: #333;
+    background-color: lightgreen;
+    /* border: 1px solid black; */
+    border-radius: 10px 10px 0 0;
+    
+}
+
+.main > li > a{
+    display: block;
+    text-align: center;
+    padding: 20px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.main > li:hover > a{
+    background-color: lightseagreen;
+    color: #333;
+    border-radius: 10px 10px 0 0;
+}
+
+.sub{
+    position: absolute;
+    /* border: 1px solid black; */
+    width: 100%;
+    top: 50px;
+    left: 0;
+    z-index: 10;
+    display: none;
+}
+.sub li{
+}
+.sub li a{
+    display: block;
+    text-align: center;
+    height: 40px;
+    line-height: 40px;
+    color: white;
+}
+.sub li a:hover{
+    background-color: aliceblue;
+    color: #333;
+}
+
+
+.sub_bg{
+    position: absolute;
+    top: 100px;
+    left: 0;
+    width: 100%;
+    height: 130px;
+    text-align: center;
+    background-color: rgba(50, 205, 50, 0.76);
+    color: white;
+    z-index: 9;
+    display: none;
+}
+
+
+/* section */
+
+#section{
+    height: 500px;
+    /* background-color: antiquewhite; */
+}
+
+.img_slide{
+    width: 100%;
+    height: 300px;
+    position: relative;
+    overflow: hidden;
+}
+
+.left_move{
+    width: calc(1200px * 3);
+    position: absolute;
+    left: 0;top: 0;
+}
+.left_move li{
+    float: left;
+}
+.left_move li a{}
+
+
+.contents{
+    height: 200px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.contents > div{
+    height: 200px;
+    width: 390px;
+    /* background-color: aquamarine; */
+}
+.contents h3{
+    width: 100px;
+    height: 35px;
+    background-color: orangered;
+    color: white;
+    line-height: 35px;
+    border-radius: 10px 10px 0 0;
+    margin-left: 20px;
+    text-align: center;
+}
+
+.contents ul, .contents p{
+    width: 100%;
+    height: 155px;
+    border-top: 2px solid orangered;
+}
+
+.contents ul li{}
+
+
+.notice{}
+
+.notice ul{
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.notice ul li{
+    display: flex;
+    justify-content: space-between;
+}
+
+.notice ul li a{
+    width: 75%;
+    text-overflow: ellipsis;
+    text-wrap: nowrap;
+    overflow: hidden;
+
+}
+.notice ul li:hover{
+    background-color: #ddd;
+}
+.notice ul li span{}
+
+.gallery{}
+
+.gallery ul{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.gallery ul li{
+
+}
+
+.gallery ul li a{}
+
+.gallery ul li a img{}
+
+
+
+.banner{
+    
+}
+.banner h3{}
+.banner p{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+
+
+/* footer */
+
+
+#footer{
+    height: 100px;
+    /* background-color: aqua; */
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    border-bottom: 1px dotted #ddd;
+}
+
+.f_logo{
+
+}
+
+.copy{
+    border-left: 1px dotted #bbb;
+    border-right: 1px dotted #bbb;
+    width: 600px;
+    text-align: center;
+    padding: 10px 0;
+}
+.family{}
+.family select{
+    height: 30px;
+}
+
+
+
+/* .modal */
+.modal{
+    width: 100%;
+    height: 100vh;
+    background-color: #333333da;
+    position: absolute;
+    left: 0;top: 0;
+
+    display: none;
+}
+.pop{
+    width: 500px;
+    height: 600px;
+    background-color: white;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    border: 20px solid rgb(32, 178, 81);
+    display: none;
+}
+
+.pop h3{
+    text-align: center;
+    line-height: 2;
+    font-size:30px;
+    text-transform: capitalize;
+    margin-top: 30px;
+}
+
+
+.pop p{
+    text-align: justify;
+    line-height: 2;
+    font-size: 16px;
+    padding: 10px;
+    margin-top:10px;
+}
+
+.close{
+    text-align: center;
+    position: absolute;
+    bottom: 50px;left: 50%;
+    transform: translate(-50%);
+    padding: 10px;
+}
